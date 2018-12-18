@@ -12,8 +12,9 @@ import com.example.respository.IUserRespository;
 import org.apache.commons.logging.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 // import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+// import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class HomeController {
@@ -40,7 +41,9 @@ public class HomeController {
         // {
         //     memList+=iterator.next().getUserName()+";";
         // }
-        
+
+
+
         //查询data
         //view
         return "index------用户信息"+memList;
