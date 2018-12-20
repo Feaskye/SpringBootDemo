@@ -1,5 +1,9 @@
 package com.example.controller;
 
+import com.example.entity.Member;
+import com.example.respository.IUserRespository;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RestController;
 // import org.springframework.stereotype.Controller;
@@ -10,9 +14,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 //@EnableAutoConfiguration
 public class LoginController {
     
+    @Autowired
+    IUserRespository userRespository;
+
     @RequestMapping("/Login")
     public String Index() {
-        return "index";
+        long userCount=userRespository.count();
+
+        // for (Member user : users) {
+            
+        // }
+
+        return "用户数量：" + userCount;
     }
 
     @RequestMapping("/OutLog")

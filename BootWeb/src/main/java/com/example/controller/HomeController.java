@@ -19,12 +19,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 //@EnableAutoConfiguration
 public class HomeController {
     
-    @Autowired
-    IUserRespository userRespository;
-
- 
     /*
-    * 首页
+    * ??
     * */
     @RequestMapping("/")
     public String index() {
