@@ -1,6 +1,5 @@
 
 
-
 @Controller
 @RequestMapping(value = "/main")
 public class MainController {
