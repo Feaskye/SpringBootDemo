@@ -121,3 +121,58 @@ mvn compile 编译你的项目
 mvn clean install 删除再编译 
  
 mvn hibernate3:hbm2ddl 使用 Hibernate3 插件构造数据库
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+【查询jar包】
+http://mvnrepository.com/
+http://search.maven.org/
+
+
+
+
+
+【一些配置】
+vscode settings 不用此更改路径
+"maven.executable.path": "D:\\Program Files\\Java\\Maven\\bin\\mvn.cmd",
+"java.configuration.maven.userSettings": "D:\\Program Files\\Java\\Maven\\conf\\settings.xml"
+
+
+环境变量 M2_HOME D:\Program Files\Java\Maven
+弃用
+{
+    "svn.path": "D:/Program Files/TortoiseSVN/bin",
+    "git.path": "D:/Program Files/git/cmd/git.exe",
+
+    "java.home": "D:/Program Files/Java/jdk1.8.0_181",
+
+    // "java.configuration.maven.userSettings": "D:/Program Files/Java/Maven/conf/settings.xml",
+    // "maven.executable.path": "D:/Program Files/Java/Maven/bin/mvn.cmd",
+    // "maven.executable.preferMavenWrapper": false,
+
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"C:\\Users\\wangrongfa\\.vscode\\extensions\\gabrielbb.vscode-lombok-0.9.5/server/lombok.jar\" -Xbootclasspath/a:\"C:\\Users\\wangrongfa\\.vscode\\extensions\\gabrielbb.vscode-lombok-0.9.5/server/lombok.jar\"",
+    "explorer.confirmDragAndDrop": false
+}
+
+
+
+
+
+
+
+
+
+
+
