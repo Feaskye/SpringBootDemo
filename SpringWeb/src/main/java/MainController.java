@@ -6,7 +6,7 @@ public class MainController {
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public String welcome(){
+    public String welcome() {
         return "test Web";
     }
 

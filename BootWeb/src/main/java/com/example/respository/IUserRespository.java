@@ -12,7 +12,6 @@ import org.springframework.data.repository.CrudRepository;
 //     List<Member> GetUsers();
 // }
 
-public interface IUserRespository extends CrudRepository<Member,Long>
-{
+public interface IUserRespository extends CrudRepository<Member, Long> {
     //List<Member> GetUsers();
 }

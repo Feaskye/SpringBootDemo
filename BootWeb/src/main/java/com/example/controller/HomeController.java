@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 //@EnableAutoConfiguration
 public class HomeController {
-    
+
     /*
-    * ??
-    * */
+     * Home Index
+     * */
     @RequestMapping("/")
     public String index() {
         return "index ----- spring boot home Page";
@@ -29,13 +29,10 @@ public class HomeController {
 
 
     @RequestMapping("/About")
-    public String About(){
+    public String About() {
         throw new ServiceException("init error");
         //return "About";
     }
-
-
-
 
 
 }

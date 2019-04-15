@@ -1,0 +1,24 @@
+server:
+  port: 9898
+
+
+#kafka:
+#    producer:
+#      retries: 0
+#      batch-size: 16384
+#      buffer-memory: 33554432
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      bootstrap-servers: 192.168.204.133:9092
+#    consumer:
+#      bootstrap-servers: 192.168.204.133:9092
+#      group-id: test-consumer-group
+#      auto-offset-reset: latest
+#      enable-auto-commit: true
+#      auto-commit-interval: 100
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      concurrency: 4
+#      max_records: 100
+#      fixedThreadPoolSize: 20
+#      session_timeout: 60

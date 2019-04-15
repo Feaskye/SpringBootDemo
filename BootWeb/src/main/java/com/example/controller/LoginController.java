@@ -13,24 +13,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 //@EnableAutoConfiguration
 public class LoginController {
-    
+
     @Autowired
     IUserRespository userRespository;
 
     @RequestMapping("/Login")
     public String Index() {
-        long userCount=userRespository.count();
-
+        long userCount = userRespository.count();
+        //userRespository.findAllById()
         // for (Member user : users) {
-            
         // }
 
         return "用户数量：" + userCount;
     }
 
     @RequestMapping("/OutLog")
-    public String OutLog(){
+    public String OutLog() {
         return "About";
     }
-    
+
 }

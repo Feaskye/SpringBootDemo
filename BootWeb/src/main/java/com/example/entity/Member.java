@@ -12,32 +12,25 @@ import javax.persistence.Table;
 
 @EntityScan
 @Entity
-@Table(name="Member")
-public class Member{
-//http://www.cnblogs.com/guanghuiqq/archive/2012/08/20/2647117.html
+@Table(name = "Member")
+public class Member {
+    //http://www.cnblogs.com/guanghuiqq/archive/2012/08/20/2647117.html
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int Id;
 
-    @Column(name="UserName")
+    @Column(name = "UserName")
     private String UserName;
 
 
-    public int getId()
-    {
+    public int getId() {
         return this.Id;
     }
 
 
-    public String getUserName()
-    {
+    public String getUserName() {
         return this.UserName;
     }
-
-
-    
-
-
 
 
 }
