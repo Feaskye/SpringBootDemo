@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 public class HomeController {
@@ -27,6 +28,12 @@ public class HomeController {
 
 
         Connection connection = dataSource.getConnection();
+
+
+        AtomicInteger atomicInteger=new AtomicInteger();
+
+
+
 
 
         return "hello world";

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 @RequestMapping("/test")
@@ -21,6 +22,12 @@ public class TestController {
     public int find(){
         return testRPC.find();
     }
+
+
+
+//    private void test(){
+//        AtomicInteger
+//    }
 
 
 }
