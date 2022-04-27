@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -23,7 +24,7 @@ public class HomeController {
     DataSource dataSource;
 
     @RequestMapping("/success")
-    public String success(Map<String, String> map) {
+    public String success(Map<String, String> map) throws SQLException {
         map.put("key", "哈哈哈");
 
 

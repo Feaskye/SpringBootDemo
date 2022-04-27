@@ -1,6 +1,9 @@
 package com.feaskye.skyboot.demo;
 
 
+import sun.nio.ch.ThreadPool;
+
+import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -26,6 +29,14 @@ public class ThreadPoolExecutorDemo {
 //        ThreadPoolExecutor threadPoolExecutor=new ThreadPoolExecutor();
 
 
+
+        //线程池的种类
+
+        //FixedThreadPool
+        //Executors.newFixedThreadPool()
+        Executors.newSingleThreadExecutor();
+        Executors.newCachedThreadPool();
+        //Executors.newScheduledThreadPool();
     }
 
 
@@ -36,7 +47,7 @@ public class ThreadPoolExecutorDemo {
 
 
 
-public class MyThreadFactory implements ThreadFactory {
+class MyThreadFactory implements ThreadFactory {
     private final String poolName;
 
     public MyThreadFactory(String poolName) {
@@ -44,7 +55,8 @@ public class MyThreadFactory implements ThreadFactory {
     }
 
     public Thread newThread(Runnable runnable) {
-        return new MyAppThread(runnable, poolName);//将线程池名字传递给构造函数，用于区分不同线程池的线程
+       // return new MyAppThread(runnable, poolName);//将线程池名字传递给构造函数，用于区分不同线程池的线程
+        return null;
     }
 
 
